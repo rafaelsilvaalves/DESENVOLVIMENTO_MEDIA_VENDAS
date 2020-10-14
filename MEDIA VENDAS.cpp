@@ -33,7 +33,7 @@ void preencher (float matriz[LINHA][COLUNA]) {
 
  for (y = 0;y < COLUNA;y++){
 
- printf ("Informe o valor da venda da %d° Semana  %d° dia:\n",x+1,y+1);
+ printf ("Informe o valor da venda da %dÂ° Semana Â %dÂ° dia:\n",x+1,y+1);
 
  scanf ("%f", &matriz[x][y]);
 
@@ -85,7 +85,7 @@ void media(float matriz[LINHA][COLUNA]){
 
  media = media/(LINHA*COLUNA);
 
- printf ("A Média do mês é:%.2f\n",media);
+ printf ("A MÃ©dia do mÃªs Ã©:%.2f\n",media);
 }
 
 void menu(float matriz[LINHA][COLUNA]){
@@ -97,10 +97,10 @@ while(menu !=0){
 system("cls");
 
 printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RAFAEL ALVES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
-printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Selecione uma Opção e tecle (ENTER)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<:\n");
+printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Selecione uma OpÃ§Ã£o e tecle (ENTER)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<:\n");
 printf("\n");
 
-printf("(1)-Preencher valor total das vendas no dia ------  (2)-Exibir Vendas ------  (3)-Médias de vendas ------  (0)-Sair\n");
+printf("(1)-Preencher valor total das vendas no dia ------  (2)-Exibir Vendas ------  (3)-MÃ©dia das vendas ------  (0)-Sair\n");
 
 scanf("%d",&menu);
 
@@ -116,7 +116,7 @@ case 3:media(matriz);break;
 
 case 0:menu = 0;break;
 
-default:printf("Opção invalida!\n");
+default:printf("OpÃ§Ã£o invalida!\n");
 
 }system("pause");
 
